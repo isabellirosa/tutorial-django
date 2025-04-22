@@ -16,5 +16,5 @@ class LivroViewSet(ModelViewSet):
         if self.action == "list":
             return LivroListSerializer
         elif self.action == "retrieve":
-            return LivroRetrieveSerializer
+            return LivroListRetrieveSerializer
         return LivroSerializer
